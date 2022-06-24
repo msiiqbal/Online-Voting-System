@@ -29,11 +29,10 @@ function Dovote(){
 
         axios.put('/update-candidate/'+data.voted)
         .then((res)=>{
-            console.log(res)
+
         })
         .catch(err=>console.log(err.message)) 
         
-        console.log(data.voted)
         alert("your voted to " + candidates[data.voted].candidateName)
         navigate('/')
     }
