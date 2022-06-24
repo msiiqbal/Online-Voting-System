@@ -27,7 +27,7 @@ function Dovote(){
     
     let voteGiven=(data)=>{
 
-        axios.put('http://localhost:2000/update-candidate/'+data.voted)
+        axios.put('/update-candidate/'+data.voted)
         .then((res)=>{
             console.log(res)
         })
